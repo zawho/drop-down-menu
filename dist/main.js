@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://drop-down-menu/./src/index.js?");
+eval("function displayMenu() {\n    const menuOptions = document.querySelectorAll('.menu-option');\n    menuOptions.forEach((menuOption) => {\n        const optionVar = menuOption;\n        optionVar.style.display = 'flex';\n    }); \n}\n\nfunction hideMenu() {\n    const menuOptions = document.querySelectorAll('.menu-option');\n    menuOptions.forEach((menuOption) => {\n        const optionVar = menuOption;\n        optionVar.style.display = 'none';\n    });\n}\n\nfunction setMenuEvent() {\n    const body = document.querySelector('body');\n    const bodyArr = Array.from(body.childNodes);\n    for (let i = 0; i < bodyArr.length; i++) {\n        if (bodyArr[i].className === 'menu-container') {\n            bodyArr[i].addEventListener('mouseover', displayMenu);\n            bodyArr[i].addEventListener('mouseout', hideMenu);\n        }\n    }\n}\n\nsetMenuEvent();\n\n//# sourceURL=webpack://drop-down-menu/./src/index.js?");
 
 /***/ })
 
