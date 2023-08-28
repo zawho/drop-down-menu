@@ -3,6 +3,8 @@ function displayMenu() {
     menuOptions.forEach((menuOption) => {
         const optionVar = menuOption;
         optionVar.style.display = 'flex';
+        optionVar.style.justifyContent = 'center';
+        optionVar.style.alignItems = 'center';
     }); 
 }
 
