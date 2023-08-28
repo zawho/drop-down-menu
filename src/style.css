@@ -1,0 +1,16 @@
+.menu-container {
+    display: grid;
+    grid-template-rows: repeat(6, 30px);
+    border: 1px solid black;
+    max-width: 200px;
+}
+
+.menu-option {
+    border-top: 1px solid black;
+}
+
+.menu-name, .menu-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
