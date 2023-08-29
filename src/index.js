@@ -1,10 +1,10 @@
 function displayMenu() {
-    const thisArr = Array.from(this.childNodes);
-    for (let i = 0; i < thisArr.length; i++) {
-        if (thisArr[i].className === 'menu-option') {
-            thisArr[i].style.display = 'flex';
-            thisArr[i].style.justifyContent = 'center';
-            thisArr[i].style.alignItems = 'center';
+    const thisMenuArr = Array.from(this.childNodes);
+    for (let i = 0; i < thisMenuArr.length; i++) {
+        if (thisMenuArr[i].className === 'menu-option') {
+            thisMenuArr[i].style.display = 'flex';
+            thisMenuArr[i].style.justifyContent = 'center';
+            thisMenuArr[i].style.alignItems = 'center';
         }
     }
 }
@@ -22,8 +22,8 @@ function setMenuEvent() {
     const bodyArr = Array.from(body.childNodes);
     for (let i = 0; i < bodyArr.length; i++) {
         if (bodyArr[i].className === 'menu-container') {
-                bodyArr[i].addEventListener('mouseover', displayMenu);
-                bodyArr[i].addEventListener('mouseout', hideMenu);
+            bodyArr[i].addEventListener('mouseover', displayMenu);
+            bodyArr[i].addEventListener('mouseout', hideMenu);
         }
     }
 }
