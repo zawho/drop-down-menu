@@ -1,4 +1,4 @@
-.menu-container {
+.dropdown-menu {
     display: grid;
     grid-template-rows: repeat(6, 30px);
     max-width: 200px;
@@ -10,7 +10,7 @@
     padding: 5px 0px;
 }
 
-.menu-option {
+.dropdown-option {
     display: none;
     border-top: 1px solid black;
     padding-top: 5px;
