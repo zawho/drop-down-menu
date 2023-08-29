@@ -30,3 +30,5 @@ function setMenuEvent() {
 }
 
 setMenuEvent();
+
+export default setMenuEvent;
