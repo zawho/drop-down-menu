@@ -1,11 +1,12 @@
 function displayMenu() {
-    const menuOptions = document.querySelectorAll('.menu-option');
-    menuOptions.forEach((menuOption) => {
-        const optionVar = menuOption;
-        optionVar.style.display = 'flex';
-        optionVar.style.justifyContent = 'center';
-        optionVar.style.alignItems = 'center';
-    }); 
+    const thisArr = Array.from(this.childNodes);
+    for (let i = 0; i < thisArr.length; i++) {
+        if (thisArr[i].className === 'menu-option') {
+            thisArr[i].style.display = 'flex';
+            thisArr[i].style.justifyContent = 'center';
+            thisArr[i].style.alignItems = 'center';
+        }
+    }
 }
 
 function hideMenu() {
