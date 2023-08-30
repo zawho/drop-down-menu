@@ -64,7 +64,5 @@ function styleMenu() {
         dropDownOptions[i].style.alignItems = 'center';
     }
 }
-createMenu();
-styleMenu();
 
 export { createMenu, styleMenu };
