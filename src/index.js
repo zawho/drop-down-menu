@@ -65,4 +65,4 @@ function styleMenu() {
     }
 }
 
-export { createMenu, styleMenu };
+export { setMenuEvent, createMenu, styleMenu };
